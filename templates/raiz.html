@@ -1,0 +1,75 @@
+{% extends "diseno.html" %}
+{% block content %}
+
+<div>
+    <img src="/static/imagenes/pantera.png" alt="Avatar" width="150px" height="150px" class="centercaja" />
+    <center>Nombre del Empleado</center>
+</div>
+
+<ul class="nav">
+    <li class="nav-item ml-auto">
+        <button type="button" class="btn btn-dark">Historial completo</button>
+    </li>
+</ul>
+
+<div class="jumbotron">
+
+    <div>
+        <p class="lead">Mis asignaciones de reportes:</p>
+    </div>
+
+
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> NO. REPORTE</div>
+            <div>DESCRIPCIÓN</div>
+            <div>DETALLES</div>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> 1 </div>
+            <div> Baño roto</div>
+            <div> <button type="button" class="btn btn-dark">Ver</button> </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> 2 </div>
+            <div> Vidrio estrellado </div>
+            <div> <button type="button" class="btn btn-dark">Ver</button> </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> 3 </div>
+            <div> Banca destrozada</div>
+            <div> <button type="button" class="btn btn-dark">Ver</button> </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> 4 </div>
+            <div> Pizarron descompuesto </div>
+            <div> <button type="button" class="btn btn-dark">Ver</button> </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div> 5 </div>
+            <div> Pavimento fracturado</div>
+            <div> <button type="button" class="btn btn-dark">Ver</button> </div>
+        </li>
+    </ul>
+
+
+    <div class="btn-toolbar p-4" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Mis reportes</a>
+
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Reportar</a>
+
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Tareas completadas</a>
+
+        </div>
+        <div class="btn-group ml-auto" role="group" aria-label="Third group">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Regresar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

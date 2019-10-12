@@ -1,0 +1,98 @@
+{% extends "diseno.html" %}
+{% block content %}
+<h1>Registro de Usuario Nuevo</h1>
+<hr class="my-4">
+<p></p>
+
+<form>
+    <label for="exampleInputEmail1">Nombre completo:</label>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido paterno">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido materno">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+    </div>
+</form>
+
+<p>
+
+</p>
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Correo">
+    </div>
+</form>
+
+<p>
+
+</p>
+
+<form>
+    <fieldset class="form-group">
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Tipo de usuarios:</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                    <label class="form-check-label" for="gridRadios1">
+                        Estudiante
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Empleado
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<p> </p>
+
+if gridRadios1==true {
+\<h1>block of code to be executed if the condition is true</h1>
+} 
+else {
+<h1>block of code to be executed if the condition is false</h1> 
+}
+
+<p> </p>
+
+<form>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Crear contraseña</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Contraseña">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmar contraseña">
+            </div>
+        </div>
+    </form>
+
+    <p> </p>
+
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for('raiz') }}"><button type="submit"
+                    class="btn btn-primary">Registrar</button></a>
+        </li>
+
+        <li class="nav-item ml-auto">
+            <a class="nav-link" href="/">Regresar</a>
+        </li>
+    </ul>
+    {% endblock %}
